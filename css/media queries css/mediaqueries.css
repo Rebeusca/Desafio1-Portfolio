@@ -1,10 +1,5 @@
 /* Estilos para dispositivos de tela pequena, como celulares */
 @media screen and (max-width: 1165px) {
-    /* cabeçalho */
-    .menu--desktop {
-        display: none;
-    }
-
     #left-main--content-text h1 {
         font-size: 2rem;
     }
@@ -98,6 +93,28 @@
 }
 
 @media(max-width: 574px) {
+    .menu-toggle {
+        display: block !important; /* Exibe o botão em dispositivos móveis */
+    }
+
+    .nav-links {
+        display: none; /* Oculta a lista de links em dispositivos móveis */
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 235, 233, 0.95);
+        backdrop-filter: blur(9.3px);
+        -webkit-backdrop-filter: blur(9.3px);
+        padding: 2rem;;
+    }
+
+    .nav-links li {
+        margin-bottom: 1rem;
+    }
+
     /* Main Content - Start*/
     #main--content  {
         width: 100% !important;
@@ -256,7 +273,4 @@
         height: auto !important;
     }
     /* Footer - End */
-
-
-
 }

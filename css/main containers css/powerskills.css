@@ -58,10 +58,16 @@
 
 #hardSkills {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 8rem;
+}
+
+#softSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #developmentWeb, #ui-ux {
@@ -91,4 +97,17 @@
 #developmentWeb {
     width: 10rem;
     text-align: center;
+}
+
+.btn-selected {
+    background-color: #2b5254 !important;
+    color: #fff !important;
+}
+
+.skills--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 2rem;
 }

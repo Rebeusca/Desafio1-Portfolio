@@ -16,21 +16,25 @@
     <link rel="stylesheet" href="./css/main containers css/portfolio.css">
     <link rel="stylesheet" href="./css/main containers css/contact.css">
     <link rel="stylesheet" href="./css/general semantics css/footer.css">
-    <script src="./script.js"></script>
 </head>
 <body>
     <nav class="menu--desktop">
-        <ul>
-            <li><a href="#main--content"><span>Home</span></a></li>
-            <li><a href="#aboutme--content"><span>Sobre mim</span></a></li>
-            <li><a href="#bottom--content"><span>Power skills</span></a></li>
-            <li><a href="#academics"><span>Formação acadêmica</span></a></li>
-            <li><a href="#experiences"><span>Experiências</span></a></li>
-            <li><a href="#portfolio--container"><span>Portfólio</span></a></li>
-            <li><a href="#contact--section"><span>Contatos</span></a></li>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#main--content" class="nav-link"><span>Home</span></a></li>
+            <li><a href="#aboutme--content" class="nav-link"><span>Sobre mim</span></a></li>
+            <li><a href="#bottom--content" class="nav-link"><span>Power skills</span></a></li>
+            <li><a href="#academics" class="nav-link"><span>Formação acadêmica</span></a></li>
+            <li><a href="#experiences" class="nav-link"><span>Experiências</span></a></li>
+            <li><a href="#portfolio--container" class="nav-link"><span>Portfólio</span></a></li>
+            <li><a href="#contact--section" class="nav-link"><span>Contatos</span></a></li>
         </ul>
     </nav>
-    <div id="main--content">
+    <section id="main--content">
         <div id="left-main--content">
             <div id="left-main--content-text">
                 <h1>Rebeca Amorim</h1>
@@ -55,8 +59,8 @@
                 <img src="./assets/images/me/IA.jpeg" alt="Ilustração de Rebeca Amorim gerada por IA">
             </div>
         </div>
-    </div>
-    <div id="aboutme--content">
+    </section>
+    <section id="aboutme--content">
         <div id="top--section">
             <div id="top--section-left">
                 <p>Sobre mim</p>
@@ -75,53 +79,74 @@
                 </p>
             </div>
         </div>
-        <div id="bottom--content">
+        <section id="bottom--content">
             <div id="bottom--content-left">
-                <button id="buttonHard">Hard skills</button>
+                <button id="buttonHard" class="btn-selected">Hard skills</button>
                 <button id="buttonSoft">Soft skills</button>
             </div>
             <div id="bottom--content-right">
-                <div id="bottom--content-right-text">
-                    <p>Hard Skills:</p>
-                </div>
                 <div id="hardSkills">
-                    <div id="developmentWeb">
-                        <p>desenvolvimento web</p>
-                        <div id="developmentWeb--icons">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Icon"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS Icon"/>
-                            <img src="./assets/images/icons/js.png" alt="JavaScript Icon"/>
+                    <div id="bottom--content-right-text">
+                        <p>Hard Skills:</p>
+                    </div>
+                    <div class="skills--list">
+                        <div id="developmentWeb">
+                            <p>desenvolvimento web</p>
+                            <div id="developmentWeb--icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Icon"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS Icon"/>
+                                <img src="./assets/images/icons/js.png" alt="JavaScript Icon"/>
+                            </div>
+                        </div>
+                        <div id="ui-ux">
+                            <p>UI/UX design</p>
+                            <div id="ui-ux--icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon"/>
+                            </div>
                         </div>
                     </div>
-                    <div id="ui-ux">
-                        <p>UI/UX design</p>
-                        <div id="ui-ux--icons">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon"/>
+                </div>
+                <div id="softSkills">
+                    <div id="bottom--content-right-text">
+                        <p>Soft Skills:</p>
+                    </div>
+                    <div class="skills--list">
+                        <div id="developmentWeb">
+                            <p>Aqui as outras</p>
+                            <div id="developmentWeb--icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Icon"/>
+                            </div>
+                        </div>
+                        <div id="ui-ux">
+                            <p>É sal</p>
+                            <div id="ui-ux--icons">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
     <div id="academic--experiences--content">
-        <div id="academics">
+        <section id="academics">
             <div>
                 <p>Formação acadêmica</p>
             </div>
             <div>
                 <img src="./assets/images/icons/Group 8.svg" alt="Campo com o histórico acadêmico de Rebeca Amorim"/>
             </div>
-        </div>
-        <div id="experiences">
+        </section>
+        <section id="experiences">
             <div>
                 <p>Experiências</p>
             </div>
             <div>
                 <img src="./assets/images/icons/Group 9.svg" alt="Campo com as experiências profissionais de Rebeca Amorim">
             </div>
-        </div>
+        </section>
     </div>
-    <div id="portfolio--container">
+    <section id="portfolio--container">
         <div id="portfolio--container-background">
             <div id="portfolio--container-contentLeft">
                 <div id="portfolio--container-text">
@@ -157,8 +182,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="contact--section">
+    </section>
+    <section id="contact--section">
         <div id="contact--content">
             <div id="contact--title">
                 <h3>Me envie uma mensagem:</h3>
@@ -180,7 +205,7 @@
                 <button type="submit">Enviar mensagem</button>
             </form>
         </div>
-    </div>
+    </section>
     <footer id="footer">
         <div id="footer--icons">
             <a href="https://www.linkedin.com/in/rebeca-amorim-4597781aa" target="_blank">
@@ -206,6 +231,8 @@
             </a>
         </div>
     </footer>
+    <script src="./js/btn-toggle.js"></script>
+    <script src="./js/navbar-script.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
