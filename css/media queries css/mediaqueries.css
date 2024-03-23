@@ -171,7 +171,7 @@
     #bottom--content {
         height: fit-content !important;
         margin: 0 !important;
-        padding: 3rem 0 !important;
+        padding: 10rem 0 !important;
     }
     #bottom--content-left {
         padding: 0 !important;
@@ -190,7 +190,9 @@
 
     /* Academic Experiences - Start */
     #academic--experiences--content{
-        padding-bottom: 5rem !important;
+        display: flex;
+        flex-direction: column !important;
+        padding: 3rem !important;
     }
     #academics p, #experiences p {
         padding: 2rem 0 !important;
@@ -205,21 +207,49 @@
     /* Academic Experiences - End */
 
     /* Portifolio Container - Start */
+    #portfolio--container-p {
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #portfolio--container {
-        padding-bottom: 5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     #portfolio--container-background {
         margin: 0 !important;
+        padding: 2rem !important;
+    }
+    #portfolio--container-contentRight {
+        width: 95% !important;
     }
     #portfolio--container-img {
         width: 80% !important;
         height: auto !important;
+        margin: 0;
     }
     #portfolio--container-git img {
-        width: 3rem !important;
-        height: auto !important;
+        width: 1.8rem !important;
+        height: 1.8rem !important;
     }
-    /* Portifolio Container - End */
+    #portfolio--container-rotate {
+        margin: 0 !important;
+        width: 80%;
+        padding: 2rem;
+    }
+    #portfolio--container-toDo {
+        margin: 0 !important;
+        width: 80%;
+        padding: 2rem;
+    }
+    /* Portfolio Container - End */
 
     /* Contact Section - Start */
     #contact--section {
@@ -228,6 +258,7 @@
     }
     #contact--content {
         margin: 0 !important;
+        padding: 0 !important;
     }
     #contact--title {
         margin: 0 !important;
@@ -243,6 +274,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column !important;
+        margin-top: 2rem !important;
     }
     #contact--form input {
         width: 80%;
